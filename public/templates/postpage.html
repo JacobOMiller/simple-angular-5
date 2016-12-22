@@ -40,65 +40,59 @@
         <h3>Read All Posts</h3>
     </div>
     <div class="panel-body">
-        <form ng-submit="create ()" class="form-horizontal">
+
+        <button class="btn btn-primary" ng-click="readAll ()">read all</button>
+
+        <!--read-->
+        <ul>
+            <li ng-repeat="item in postList">
+                <div>
+                    <strong>ID: </strong>{{ item.id }} <br>
+                    <strong>Name: </strong>{{ item.title }} <br>
+                    <strong>author: </strong>{{ item.author }} <br>
+                </div>
+            </li>
+        </ul>
+        <br>
+    </div>
+</div>
+<div></div>
+<!--update  -->
+<div class="panel panel-warning">
+    <div class="panel-heading">
+        <h3>Update Posts</h3>
+    </div>
+    <div class="panel-body">
+
+        <form ng-submit="updatePost ()" class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2">ID: </label>
+                <div class="col-sm-10">
+                    <input class="form-control" ng-model ="post.id">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Title: </label>
+                <div class="col-sm-10">
+                    <input class="form-control" ng-model ="post.title">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Author: </label>
+                <div class="col-sm-10">
+                    <input class="form-control" ng-model ="post.author">
+                </div>
+            </div>
             <div class="form-group">
                 <label class="control-label col-sm-2"></label>
                 <div class="col-sm-10">
-                    <button class="btn btn-primary" ng-click="readAll ()">read all</button>
+                    <button class="btn btn-warning">Update</button>
                 </div>
             </div>
-
-
-            <!--read-->
-            <ul>
-                <li ng-repeat="item in postList">
-                    <div>
-                        <strong>ID: </strong>{{ item.id }} <br>
-                        <strong>Name: </strong>{{ item.title }} <br>
-                        <strong>author: </strong>{{ item.author }} <br>
-                    </div>
-                </li>
-            </ul>
-            <br>
-        </div>
+        </form>
+        <br>
     </div>
-    <div></div>
-    <!--update  -->
-    <div class="panel panel-warning">
-        <div class="panel-heading">
-            <h3>Update Posts</h3>
-        </div>
-        <div class="panel-body">
-
-            <form ng-submit="create ()" class="form-horizontal">
-                <div class="form-group">
-                    <label class="control-label col-sm-2">ID: </label>
-                    <div class="col-sm-10">
-                        <input class="form-control" ng-model ="post.id">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2">Title: </label>
-                    <div class="col-sm-10">
-                        <input class="form-control" ng-model ="post.title">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2">Author: </label>
-                    <div class="col-sm-10">
-                        <input class="form-control" ng-model ="post.author">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2"></label>
-                    <div class="col-sm-10">
-                        <button class="btn btn-warning">Update</button>
-                    </div>
-                </div>
-            </form>
-            <br>
-        </div>
-    </div>
+</div>
 </div>
 <div></div>
 <!-- delete -->

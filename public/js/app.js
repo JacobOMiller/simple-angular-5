@@ -72,7 +72,7 @@ app.controller('MyApp.PostPageController',[
         $scope.updatePost = function(){
             console.log('update post working');
             $http ({
-                url:'http://localhost:3000/posts/'+                $scope.post.id,
+                url:'http://localhost:3000/posts/'+ $scope.post.id,
                 method:'PUT',
                 data:$scope.post
             })
