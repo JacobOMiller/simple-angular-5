@@ -5,20 +5,14 @@
     <meta name="viewport" content="device-width, initial-scale=1">
     <title>simple angular 5</title>
     <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-
+    <link type="text/css" rel="stylesheet" href="/css/style.css">
     <!--load scripts  -->
-    <script src="/lib/jquery/jquery.js"></script>
+    <script src="/lib/jquery/dist/jquery.js"></script>
     <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 <body ng-app="MyApp">
     <h1>simple angular 5</h1>
 
-    <!-- <nav class="navbar navbar-default">
-    <a ui-sref="home">home</a>
-    <a ui-sref="about">about</a>
-    <a ui-sref="contact">contact</a>
-    <a ui-sref="postPage">Posts</a>
-</nav> -->
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -34,8 +28,11 @@
             </ul>
         </div>
     </nav>
-
-    <div ui-view></div>
+    <div class="panel panel-primary">
+        <div class="panel-body">
+            <div ui-view></div>
+        </div>
+    </div>
 
     <script src="/lib/angular/angular.js"></script>
     <script src="/lib/angular-ui-router/release/angular-ui-router.js"></script>

@@ -1,0 +1,36 @@
+body{
+    padding: 20px;
+}
+.panel .panel-heading h3{
+    margin: 0;
+}
+
+.panel-success{
+    border-color: #3c763d;
+}
+
+.panel-success .panel-heading {
+    border-color: #3c763d;
+    background: #3c763d;
+    color: white;
+}
+
+.panel-warning{
+    border-color: #dbd41b
+}
+
+.panel-warning .panel-heading{
+    border-color: #dbd41b;
+    background: #dbd41b;
+    color: white;
+}
+
+.panel-danger{
+    border-color: #a94442;
+}
+
+.panel-danger .panel-heading{
+    border-color: #a94442;
+    background: #a94442;
+    color: white;
+}
