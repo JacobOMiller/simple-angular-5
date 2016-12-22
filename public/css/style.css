@@ -6,31 +6,31 @@ body{
 }
 
 .panel-success{
-    border-color: #3c763d;
+    border-color: #5cb85c;
 }
 
 .panel-success .panel-heading {
-    border-color: #3c763d;
-    background: #3c763d;
+    border-color: #5cb85c;
+    background:  #5cb85c;
     color: white;
 }
 
 .panel-warning{
-    border-color: #dbd41b
+    border-color:#ec971f;
 }
 
 .panel-warning .panel-heading{
-    border-color: #dbd41b;
-    background: #dbd41b;
+    border-color: #ec971f;
+    background: #ec971f;
     color: white;
 }
 
 .panel-danger{
-    border-color: #a94442;
+    border-color: #c9302c;
 }
 
 .panel-danger .panel-heading{
-    border-color: #a94442;
-    background: #a94442;
+    border-color: #c9302c;
+    background: #c9302c;
     color: white;
 }
